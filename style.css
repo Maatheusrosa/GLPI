@@ -1,0 +1,563 @@
+@charset "UTF-8";
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(23, 86, 163, 0.034);
+    width: 100%;
+    height: 100%;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: rgb(172, 172, 172);
+    width: 100vw;
+    height: 130px;
+
+}
+
+    #container-cima-header {
+        background-color: #b2341c;
+        height: 80px;
+    }
+
+        #logo-glpi {
+            position: absolute;
+            width: 110px;
+            margin-top: 13px;
+            margin-left: 20px;
+        }
+
+        #opcoes-centro {
+            display: inline-flex;
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-top: 20px;
+            height: 40px;
+        }
+
+            div.opcoes {
+                display: inline-block;
+                margin-left: 50px;
+                margin-top: 8px;
+                text-align: center;
+                height: 25px;
+                border-radius: 5px;
+                font-weight: bold;
+                color: rgba(255, 236, 236, 0.801);
+                transition: 0.5s;
+            }
+
+                div.opcoes:hover {
+                    color: white;
+                    cursor: pointer;
+                }
+
+                div.opcoes > p {
+                    margin-top: 4px;
+                    display: inline-block;
+                }
+
+                    #especial {
+                        position: absolute;
+                        font-size: 12px;
+                        font-weight: 600;
+                        rotate: 90deg;
+                        margin-top: 7px;
+                        margin-left: 3px;
+                    }
+
+                #ativos {
+                    width: 60px;
+                }
+
+                    #caixa {
+                        position: absolute;
+                        width: 22px;
+                        margin-left: -27px;
+                        margin-top: 2px;
+                    }
+
+                #assistencia {
+                    width: 100px;
+                }
+
+                    #fone {
+                        position: absolute;
+                        width: 20px;
+                        margin-left: -27px;
+                        margin-top: 2px;
+                    }
+
+                #gerencia {
+                    width: 80px;
+                }
+
+                    #carteira {
+                        position: absolute;
+                        width: 20px;
+                        margin-left: -27px;
+                        margin-top: 2px;
+                    }
+
+                #ferramentas {
+                    width: 120px;
+                }
+
+                    #mala {
+                        position: absolute;
+                        width: 20px;
+                        margin-left: -27px;
+                        margin-top: 2px;
+                    }
+
+                #administracao {
+                    width: 120px;
+                }
+
+                    #escudo {
+                        position: absolute;
+                        width: 20px;
+                        margin-left: -27px;
+                        margin-top: 2px;
+                    }
+
+                #configuracoes {
+                    width: 120px;
+                }
+
+                    #engrenagem {
+                        position: absolute;
+                        width: 20px;
+                        margin-left: -27px;
+                        margin-top: 2px;
+                    }
+
+                #encontrar-menu {
+                    margin-right: 20px;
+                    width: 160px;
+                }
+    
+        
+        div#info-user {
+            background-color: rgba(155, 155, 155, 0);
+            width: 190px;
+            height: 60px;
+            float: right;
+            margin-right: 20px;
+            margin-top: -50px;
+        }
+
+            #logo-usuario {
+                width: 50px;
+                height: 50px;
+                background-color: lightgreen;
+                display: inline-block;
+                margin-left: 120px;
+                margin-top: 0px;
+                border-radius: 4px;
+            }
+
+                div#logo-usuario > p {
+                    color: rgb(124, 124, 124);
+                    text-align: center;
+                    margin-top: 15px;
+                    font-size: 16pt;
+                }
+
+
+            div#texto-user {
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 10px;
+                color: white;
+            }
+
+                #cdgcons {
+                    font-size: 10pt;
+                    color: rgba(255, 255, 255, 0.562);
+                }
+
+            #seta-baixo-user {
+                transform: rotate(90deg);
+                position: absolute;
+                margin-left: 173px;
+                margin-top: -40px;
+                font-size: 15px;
+                color: rgba(255, 255, 255, 0.438);
+            }
+
+
+    #container-baixo-header {
+        background-color: white;
+        width: 100vw;
+        height: 50px;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.24);
+    }
+
+        #caminho-chamados {
+            width: 400px;
+            display: block;
+            margin-left: 10px;
+            position: absolute;
+            margin-top: 10px;
+            height: 30px;
+        }
+
+        #caminho-home {
+            width: 80px;
+            margin-left: 10px;
+        }
+
+            #caminho-home > p {
+                display: inline-block;
+                margin-top: 7px;
+                margin-left: 2px;
+                position: absolute;
+                font-size: 13px;
+                color: rgba(70, 69, 69, 0.699);
+            }
+
+            #casinha-logo {
+                width: 17px;
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+
+        #caminho-assistencia {
+            width: 120px;
+            margin-left: 100px;
+            margin-top: -24px;
+            height: 30px;
+        }
+
+
+            img#headset-logo {
+                width: 17px;
+                margin-top: 4px;
+                margin-left: 3px;
+            }
+
+            #caminho-assistencia > p {
+                display: inline-block;
+                margin-top: 5px;
+                margin-left: 5px;
+                position: absolute;
+                font-size: 13px;
+                color: rgba(70, 69, 69, 0.699);
+            }
+
+
+        #caminho-chamados2 {
+            width: 105px;
+            margin-left: 215px;
+            margin-top: -30px;
+            height: 30px;
+        }
+
+            img#chamado-logo {
+                width: 17px;
+                margin-top: 3px;
+                margin-left: 3px;
+            }
+
+            #caminho-chamados2 > p {
+                display: inline-block;
+                margin-top: 5px;
+                margin-left: 5px;
+                position: absolute;
+                font-size: 13px;
+                color: rgba(70, 69, 69, 0.699);
+            }
+
+        div#barras {
+            margin-left: 85px;
+            font-size: 20px;
+            color: rgba(70, 69, 69, 0.699);
+            margin-top: 4px;
+            position: absolute;
+        }
+
+        #p1 {
+            display: inline;
+            margin-left: 0px;
+        }
+
+        #p2 {
+            display: inline;
+            margin-left: 105px;
+        }
+
+    
+    #line-chamados {
+        width: 1px;
+        height: 35px;
+        background-color: rgba(73, 73, 73, 0.233);
+        margin-left: 335px;
+        margin-top: 7px;
+        position: absolute;
+    }
+
+
+    #opcoes-container-baixo {
+        margin-left: 350px;
+    }
+
+
+        .atributos-container {
+            width: 150px;
+            height: 30px;
+            border: 1px solid rgb(128, 128, 128);
+            margin-left: 2px;
+            display: inline-block;
+            margin-top: 13px;
+            border-radius: 2px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .atributos-container:hover {
+            background-color: #626976;
+        }
+
+
+        .atributos-container:hover .font-opcoes-busca {
+            color: white;
+        }
+
+        
+
+    #Adicionar {
+        width: 90px;
+        height: 22px;
+        background-color: #626976;
+        border: none;
+        border-radius: 2px;
+    }
+
+        #Adicionar > p {
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+
+
+    #Pesquisar {
+        width: 90px;
+        height: 20px;
+    }
+
+        #lupa {
+            width: 15px;
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 3px;
+        }
+
+    #Listas {
+        width: 70px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+        #estrela {
+            width: 14px;
+            margin-left: 3px;
+            margin-top: 3px;
+            position: absolute;
+        }
+
+    #Modelos {
+        width: 85px;
+        height: 20px;
+    }
+
+        #jornal {
+            width: 18px;
+            margin-left: 3px;
+            margin-top: 2px;
+            position: absolute;
+        }
+
+
+    #Kanban-global {
+        width: 120px;
+        height: 20px;
+    }
+
+        #janela {
+            width: 16px;
+            margin-left: 3px;
+            margin-top: 2px;
+            position: absolute;
+        }
+
+
+    #Chamados-aguardando {
+        width: 260px;
+        height: 20px;
+    }
+
+        #olho {
+            width: 19px;
+            margin-left: 2px;
+            margin-top: 0px;
+            position: absolute;
+        }
+
+
+        .font-opcoes-busca {
+            margin-left: 28px;
+            color: #626976;
+            font-size: 13px;
+            margin-top: 2px;
+            transition: 0.3s;
+        }
+
+        
+    #pesquisar {
+        float: right;
+        margin-top: -25px;
+        margin-right: 50px;
+        border: 1px solid rgba(128, 128, 128, 0.445);
+        border-radius: 4px;
+        height: 30px;
+        width: 200px;
+    }
+
+
+    #pesquisar::placeholder {
+        padding-left: 10px;
+        color: rgb(179, 174, 174);
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #pesquisa {
+        border: 1px solid rgba(128, 128, 128, 0.445);
+    }
+
+
+ main {
+    margin-top: 20px;
+    height: 1000px;
+ }
+
+    div#container-vazio {
+        background-color: #ffffff;
+        width: 96vw;
+        height: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        border: 1px solid rgba(26, 26, 26, 0.11);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.075);
+    }
+
+    #container-regras {
+        margin-top: 20px;
+        width: 96vw;
+        height: 120px;
+        background-color: rgba(187, 111, 134, 0.11);
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid rgba(236, 171, 140, 0.712);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+        #grupo-regras {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        select {
+            height: 35px;
+            border: 1px solid rgba(128, 128, 128, 0.315);
+            border-radius: 3px;
+            color: rgb(102, 102, 102);
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+    #container-adciona-regra {
+        background-color: rgb(252, 252, 252);
+        width: 96vw;
+        height: 50px;
+        margin-top: 24px;
+        border-top: 1px solid rgba(128, 128, 128, 0.199);
+    }
+
+        #regras {
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 200px;
+            height: 30px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+            .regras-adiciona-chamado {
+                width: 40px;
+                height: 15px;
+                display: inline-block;
+                border: 1px solid black;
+                margin-top: 7px;
+            }
+
+
+            #regra {
+                width: 40px;
+            }
+
+
+
+
+
+
+
+
+            #icone-regras {
+                display: inline-block;
+                position: absolute;
+                margin-top: 2px;
+                margin-left: 170px;
+            }   
+
+                #estrelinha {
+                    width: 15px;
+                    position: absolute;
+                    margin-left: 12px;
+                    margin-top: 7px;
+                }
+
+                #redondinha {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid gray;
+                    position: absolute;
+                    display: inline;
+                    margin-left: 45px;
+                    margin-top: 9px;
+                    border-radius: 50%;
+                }
+
+                #redondinha > p {
+                    font-size: 7px;
+                    margin-left: 2.3px;
+                    margin-top: 1.4px;
+                    color: gray;
+                    cursor: pointer;
+                }
+
+            

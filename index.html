@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="container-cima-header">
+            <img src="/imgs/logo-GLPI-250-white.png" alt="logo glpi" id="logo-glpi">
+            <div id="opcoes-centro">
+                
+                <div class="opcoes" id="ativos"><img id="caixa" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCklEQVR4nO2Zvy4EURjFBwkKRIXoJBoPoJPQKPAAovAMEo1kW41W6QXEn8IDkBArCkpkRUMhsTPnm51KguDI3b2LWBt3546ZFfckt5nN9+c39zszu3c9z8nJyelfiGQbgWUCTxRhags4Tg7i7q6PInupAsjHSgYCGCVwo+/OLUulMcO4CQKRbmafUdRrFFcs9hM4TwyEZAvDcPF9lIBdtTNGsWE4S5EHHbfBq6sOozjfH6BIQQMUrEEIdBPY0o28UmRFecQoVmSBwIuOXSXZGmMnLgkMWoFQZITAhW5EGIZTxjuogKvwwJJxzWIthO4lHgiBeYrc6wSnjKIhQ4h2iqxriEcGwZwtRCwQXl93lsfgw2Brqjmj2CjqpciBhogYBONJQMQDAY6yerSyamzfH6jpq2GQbCH4HYQViJey+ENdB+KlLLodsZhF/a64NDYwkG9mkEIDT6PDpgT5DdGB1JHbEUvRjVYdudGyFN1o1ZEbLUvxP4wWfb/rz4NQncgA2/rzE+uEmYGI5PQ36BJ9f9g64W+L39SlyCSB5/IhXxDMWCdMQ/xSV52jlQ8FK9dz1gnTEj/VLZsbONPXdpRPrBKmKVZ/hFXMvfl+xiXSY5Uw8U4N6zKuueslTLTLBupSGbti7ulEEibWYYN1GdfcPyTMYu3EMncNCJDPDALIqz+WrCGcnJycvGbWG96dTbuAkoCGAAAAAElFTkSuQmCC"><p>ativos</p><p id="especial">></p></div>
+
+                <div class="opcoes" id="assistencia"><img id="fone" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADeUlEQVR4nO1Zz0sVURidtLRFREEUWPRDbVNEUFSEEgT9DRZiUIu2RT+oRZTSwn27WtSuvRaUEWhCEKK1igoXuQjzzZxv5tlbWJZ24s4bn/c93zx9M3dGhXfgos7g+c65P77vmxnLqqGGtQWSG+h5+wgcp8g5f7juaYrssdYqCDQRuEngNYEsRVh2AD8JvKTINWYyu1Zbt0XPO0KRfgJzoaLDzfylyDO67uH0hZN1FHlEYD5EoEORMQJvgvGeAEKMzBF4SNvekp4BxzlTImLeFypyiZ63N/T/stn9dJwrFBkuY+arWtF0DExN7aSIHQTup8ihqjkc5xiBgTJn5GwyqksFiGxlJtMcmwe4SJGcZmSGntduRuVCELJBzbJKkUaJA6iDTOC7thKeicnRxX8IyB8bIS0XJ5NppsgPbSVGSW6MTyxyXZuZz0bUhsUCTlDkdyGe696IR5jL7SgpTFeNqQ2LCdzWJmya2ey2OGR39Nknucmo2jJQMSjyRZu0u1bknkZkXDPQFYkoSmygS4v7LVLyoMhJjcTlxMTmRNSGJQ5AtFU4ZVULArc0A0+tlEHgSaxtRJE+jeByIipXuo1E+qMQfCoQpNWjaKBtH9X7JKtaaL0OVe9jpQxOT2/XtnC2egLgT4GAbCTQSZEXfrXMt8Dq/mCcks989R32ufLPFKoS99NxLgTptNByV09e3Op+rPBwMhTZgMhQBd4x/e+4Bio9Wc1GNgBtlZcZJgzMUOSev+xkfSzycjHIetp2C0W6g1hGDcyoNwth900YsPTrrttGkV8mDdxfaXATBhQI9JgzUCbTGDKQCzhyS+7Zdqs5A2RDIgaATgLv1M8l98bHG7VE8S8K+eJzgG23JGGgEug4B+OuwHONoDt1A8CDeAZUNSzOQm0JbKFeP9sAvUXXPa89fhbKv33Tq6EK1OMfLlN1AJhdKIZBHWgNZr5IfOQYzGYPFDV15ivxbGKVuMTEaAXywcjcIm8rTMyIsXPmbyfXPR+8Rpw01o3afuswpHWjk/6DlOt2BFs40USRKKifsyjt9GqDxXVg0lpvYHEd6LPWE1haB1y3I+3vZQNF7zjz6XKo0oFnWB1Q2YisS9PAq5Xmdi4/ptQXz9TE+waWK3wrHcBI6uJ9A/nPqFEEz5XWgdTF+wZEdgfbaPEMqN/VNaBpVUTVUIMViv+6IAPfwtcPcgAAAABJRU5ErkJggg=="><p>Assistencia</p><p id="especial">></p></div>
+
+                <div class="opcoes" id="gerencia"><img id="carteira" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6UlEQVR4nO1YO07DQBC1FKClgI5vwQmoEAJESAd34BIUHIGSht8toIUjcAMKpPATxG+ywaEKCjzkYKIFAknweJOIfZLlwvLsvN2ZfTMTBB4eHh59CxqzRJETitxRhKoP8EyRCwK7FJnUdx7YJvCi7nhrMoZhuKLnfLm8SKDuxHlpknikyIQOgfew+TB8ynJ5SsWwvQY5TGCNwLVFZEfHuMhT06gx0ypGf15rgUAtWW9Txyjw6opADJZKcwzD+UALX2LzjMbMBIMEukxe+bRZ9SQnjlJtWs8IyKenGie5BoFjArc9InHPKBpLRSBwCJK5WNAIFC0f9geGwAcIFKy8KAYDR4DM2Yk9cARS++AJ/LcTYLU6TpEDAjctq+Aw3OhbAgTyFHloqwndkKDIZfLjpYOdf+hQ1M67qw6BrfidKQGRQ+u6vGqcBplrfjdm1PpeC/oNtJsZIK8Wzs5OAM1GhiRH9Ai4ygFYJxCGy5oEnNxC/J4DBZUccEagUplt1P3qt5BbHSg06v72OrDev0ocRWMU2UvCqJ7K+YZBX43+s2JOn4Adh9a15gokh9J1ZB0ITJYgsJq2J/5VYDLthYHV9FOJ7gQm25G7+eNstmOByc75KPbhT853LDDZzEaLcdi4mIp7eHh4BKnxBiWl8jQ6yNuOAAAAAElFTkSuQmCC"><p>Gerência</p><p id="especial">></p></div>
+
+                <div class="opcoes" id="ferramentas"><img id="mala" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAETklEQVR4nO1aS4gdRRQtdaIREzF+Ylz4ByP+cKGo+AE3gt+ViiKIgaCLaPwtFCJJJChBCTK4EF0oRkJEcCMISkACBncRxB8ZxYEZyJuuc6vfm4+fRJMj1a+mu9OZTPd73ZnX/agDF4Y3Vbfqnq6uOvdWK+Xh4eHh4XFSwE5nFUWeJPBKX2bMemp9kWoiKPIUAaEIS9pcRAZ5imoKqPVjBI5WEHxiwDbVBBBYSaDtJh5Q6/s4NnZGz37IZdT6Tor85gg4zDC8RNUdBB6Mn5oxj5b2J3JrahVsUHUHRTa5ydpX4OxKfCZ7yQeq7qDILkfARGU+gX3O57dV+Sw+eLt9OYFn7CZEke25Bky6yU4Wal/M58/O53TB9q9TZB2DYE3ZM3xX5bv5UprdOIHRnjdh2uDnWU/sHwJhQ+zfzNy/IXl6cQKAT1Ms7qEx16oGwYomGnMbRfan4nizWGetr4qXPfB1oxRYBhwfX07gJ0fCX1aj5HcS2Zhiba1qOGjMvXE8Wj+Q30HkbddhVg0BODNzfmoveDa/AzDqnr5RQ4BImicr+uUiHUY9AeJXAP0rgEhFvcpW6yzVUFjxQ5Hn+tsDJO6EqCIzPr5cNQQkT6Uxj8S1hFIESNx5gsDTJEdUnRWgrUcAP5wghp5OgZBaP06RsYyjX22ho24KkVrfT5HvMwFP0piXSh2DJEdcZfePjPMf7TJbiuAWna8xt1Nkb2ZuEr22ExNnVqYDaHW1yAsU0ZnB9lHru3LrezbD7MXIZYv6FLklStSOnYutRW5iEKw4aUKIQbCCIq8R6GQG/4rATce1D8M7otJ27/n8nH26C/i7gSJfZNrOEnjDErdkSpCdzrmuAvNnaoCjBD6nyDVxO5HNJYoam1PzWkuR3QSOpP7/N4F32GqtHpgUZhCsIfAugUOpgf4j8LErp21N/V7sRihpv5VheCmBD48pcliNIvI+jbm4NrkA2+3LCHwUBZ8MeCh9Fhf2lTzhsQyx9ul/wiC4srbJEIGrKbIzs1T7JSC9x+xhENzYmGyQxlxH4LPSBNjAgZsbmw4T2NE3AcCOCsYfMAEiW0qsgC3DQMDz8QSmp8/Lbd9qrU4RsLH5BAB39xIQRV6M2+cozGYQQI6k8og5qwxP2LZ7HT6vGn8neVrjCbBwKWr3WOzqhJ22Qhul19bs3/Z8T9ocsd8VqApQCwIsXLCHc+WvbWPMelURakOABcPwenftNrNA8Pa33VY/qApRKwKO2+2npq6IbJFkZmgJWCp4AuBXwEr/CojfA+g3QSl6Coi8NS9b1RCABw9e0NOHlgQ2xB0qFiWDAIGHUslVvrymFSZJOWtvFQnJoGAvdilywMUyW/iil7aimyyb76LvdXv5zGzAcJc49xD4ZaESe1HxsD83cWmOfdnzpS67N0DvLfDRYZPMfhq3rdSNNqemLiTwhPsKfHsjrHu58jDb7XP6DtzDw8PDQw0//gcXis7DeFokhQAAAABJRU5ErkJggg=="><p>Ferramentas</p><p id="especial">></p></div>
+
+                <div class="opcoes" id="administracao"><img id="escudo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFUklEQVR4nO1bXawdUxTefoqUUtVSJRUhngkpwQOhfuonUiER1aYR5UlF0Iuk2qD3PogS/yIRiScPFKnSkmrSl1IPxHW5RUOdczqz1sw594Re0t77yZ4zZ86emX3+ZuacmXM7X7KTm7P3Xuvba6+9Z++11xUiR44cOXL0F7CsK8H8Jpj3gXkMRC/BNC8RMxlgPgdE68D8C5ihLUSjThvDWChmArB//0mwrLvA/CmIDjcdeNgQUyDaAeaVKBRmi0ECgGNg21eD6B0QTTQZ5CSIPgDRGhA96Pwtf9Mbwwbz62C+QmQZYD7XdfHxFrO7F8xrUa3OD/W37dOcGZczTzTdpP/PINqAcvl8kUEXP9JkBg+AeQSmeVHHcm17sWvMX1sskd2OBxnGKb0dpQYguhTMb4G52mSmDrkufhuA40READjWWU6d6GK+Xi6/qLraAsAsMD8Fot9bblxEK1AqnSwShpTpyK7pmGpijN9A9FgcozeFsz71A/8JRENyD4gkt1Q6E6Z5D2z7vC73myFHt94Qq6JwaQln82kM2gLRK2BeImICRN97HsS8E8yrQTSn4/7MSxwuklOD34a4vNoZIDEFTWbwHzC/D+YbOnXnXvFLywBqKYDo5XZH5ZlsACjlO+ccodlkjxYDwC1f94tfNg1ANH10G4AZ/eLnAczrFQUbRboeMBWSQ7RRabM+KX4e3MNOXcGwSNcAFY2cEaX+iaT4eQDzI4qCF0W6BjgQkiM/lY02DyfFzwOY71cIvCvSNcBoSA7Re0qb1Unx8wDTXKYQ2CbS3QR3huQQfeHVW9bNSfHzIE9iigF+EOka4I2QHKIfvXrDuDgpfh5QLs9VCBySd3WRngF8a1zeF3whtUrl9CS4hQDmoqckobBURAMs9ckwjAuVukISvLQA85eKojtFAoiwAcro8qk+GbWwXL1+exK8tADRJoXMCyIdA+zW8Nqs1D+bBC8tYJq3KIr2iAQQwf2f0cj41qs3zWVJ8Gq+EdYfOGQEp1hcIPrvAZf5+hvGQi9GKLmVy3PjcmoJMO9SCK0UMdHl4EOfXyeE1uKanDhA9LiicGufPWCths92r96yHo3Lpy3k5897uZEud/DgWbHkdT74yeCLEogWeQ8ychnY9uI4XDqGG72tu+VQTFmduv9mTd+nlTZfxeER/Y1APn0Bs3psgL+DngbgBCdg2uCxIiqHroHx8RN9p0Ki+3psgBFNv1VKfVEaJCqHSAi43z4Ax0eU0871/wg+lLjPdOrD6ZOi30DtTKC+xqzpiQEs68ZQH5lT0NBryaf1RAbVLdwn7DpZM8otrM3shwIvqFTmgYiUNutEWkChMNtx0Rb39LYyWhx6dG//YH7btzzSTqEB0R0KoWlY1k1d9dcP3oJhXKBpu9SXPUJ0u8gCwLzF91msVObFMMC/ILom1G5i4gwQ/aW0+0hkBSgWF4C5pBhhR8evuv6Z/083q06mCNE2336TtVQ6yHQYv3s+11G/xnlislkwMxDzn4Zp3iqyCDAP+2bUNB9o28eyrgLzq2C+XFtP9FDAS54XWQWkqzJvVcgeiRM6c0Jd/uyzT5IKxvYMIJrji9DIARDd27Ucy7o7kF36TSopcTE2xTHFCIc7WQ5e/1r2qDrzY7rkykwDtbv6aGD9bmrlwu4SGtEkUC8SgwhUq/PdtBZ1QJ/Jb7q2LdHngTPB3oGb+SDkugXzx5ob3rVeG6LrQPRnYPBbBmbNt4Pr2sOBc4L8+zWnBH9vs1QGFpD5vGogJVzMnsb1swCY5tnyHK+5AH2YueNtLwHm5e7/FsiyvKfKcuTIkSNHDqHD/yae0bZSyH3XAAAAAElFTkSuQmCC"><p>Administração</p><p id="especial">></p></div>
+
+                <div class="opcoes" id="configuracoes"><img id="engrenagem" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACMUlEQVR4nO1XvU4jMRBeQUGBoOW3QEICCR1vQEEfDhregRIKknTXcHS8Az0PANcECUpEc21AdCixZ9gFggRH8yE7s4ths3sGskRIjGQp+3n+PH92guCbviKBuQlmvFrNzzI+2cF4vCaKd4BoxRoj2newA8GWi3eAeUeMbTsObEsEdrpjJIqmwHwK5l/QesZiYTgP5mMn3KuOU6sOfmR4La71jNVhdEXRlL8DRHsvckv0F8z38n0G5nU0GoMJf6MxaLH2nuG5FxlXx56v8UURuAHRLogi+X4E0SaAvkxZoM/yGN62TCQ6buR7Md840J94TlSxWL0+YAsvDBe8IxiGC1amXh+QQ1WSSAL9eadfS07LPJnJp/USmGtgvgNzy/7WupTbus9RWctzYBZEF0mulZruwPM7cw4QbaX4lZpOasPoJprNdMAQms0RMJ+IUhV3gXNygz/YXGs9ZhdR2WJmz4mEdIESmROjO/AhtKv6UgTnEpz5UE6ymZKJ88xcc/jnBLt0u8bPCaJrMTbkKDT5BpQaTfErNSrGbh0dQ6Lj+k3Gcxy4lTCPxZizNxG3r4MNv8sBZKegJgrLKRmialdSgPwiLDlFWAHRuKwqiP6lirDdAf5FCL823CqsDeE/iEqSjlZ3BxF6PIo9LqOyx2VUefdl5Hkdn4N5o8N1vCF7H7uO//MgOfJ6kFxd/fjQg6TnT7I8Mg9PceDAwf4I9jMomhCP3M5zYLxwB3r+x+Sbgi7TE96gvpryw8ELAAAAAElFTkSuQmCC"><p>Configurações</p><p id="especial">></p></div>
+
+                <div class="opcoes" id="encontrar-menu"><p>Encontrar um menu</p></div>
+            </div>
+            <div id="info-user">
+                <div id="nomes-user">
+                    <div id="texto-user">
+                        <p>Super-Admin</p>
+                        <p id="cdgcons">CDGCONS</p>
+                    </div>
+                    <div id="logo-usuario">
+                        <p>MM</p>
+                    </div>
+                    <p id="seta-baixo-user">></p>
+                </div>
+            </div>
+
+        </div>
+        <div id="container-baixo-header">
+            <div id="caminho-chamados">
+                <div id="barras">
+                    <p id="p1">/</p>
+                    <p id="p2">/</p>
+                </div>
+                <div id="caminho-home">
+                    <img id="casinha-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB90lEQVR4nO2Yv0scQRTHP16iBIIBFQXBBAsRQZGzsbS7gEIKwSKF4BXiX6CY0tLW0srSSuz8hWBhIbH0ByGEWIh2/kiCoqtnVhZHGB57Mvv7DucDA8fuvO97b/e9mZ0Di8WSFAPAIfBb/a4qJoA7wFXjHpimCngHLGiBy7EIvKdC6QD2RMA7aujX9tTcimIIuBCBzgN1wFtgVtz7CwxTAdSo2n7QgrsFxn3mjgLX2rz/KrEcGfEBWBZP9hjof8EmDxwJmxWggZTpAn6IQLaAFgPbJmBd2P4CekmJr8CVKIU5VeumvAFmROndAMUE4/Ztxn/ASATNL8ClT/PXEjPNwKZw9BPojkG7EzgQ2ttAKzHRB5wIB0tAfVwOeNJaEj5OlO9I5MX6XgK+qeUzbmqUdknzdx6lub063NfEzoACyVNQvvSdO1RPFDWRPzHVuyk9ard+9j8WRkRfqydJnynN/2oYgVNN4BPp0y4aOjD6JpPF90pO8+/FEhh9ScsKN0oMNoEYcO0b4JX1wBCwCzg+B3pH3RtMOIbQxp/V2cA1GF6iJqSawK5h8N74XokJONp8vzNuozj4JxFDJGOT+UlolsUm4IN9A0GwJeSDLaEg2BLKuoScAJ8GruEum4RmWTZCOltLWbMsH9VfK6ZPzVGO2lLWtFgsVDGPMK2osGh7JHQAAAAASUVORK5CYII=">
+                    <p class="font-opcoes-busca">Home</p>
+                </div>
+                <div id="caminho-assistencia">
+                    <img id="headset-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADIUlEQVR4nO2ayWsUQRSHP8kkmgjiguboln9A3M1FEFzwJoIQvLgcxCgigktyMYeYmXhQ8KYXD5qr+0FEUBTUg8aoIGgQReMhKhJQ0UxMScmvoRhm0tPMdPV0yAcNXTNT7/1ed9erV9UDUxRlCXAA6AP6ga9AHhjV+TPgMtAOLKbGqAfagEeAiXCMAw+BrdQAm4DXjrifwE1gP9AKtAAzdbToM/vdLeCX0+8JsCGJADJAr66qFfIJOAg0RrDRqD5Dzh3qkW0vLAAeyLl99o8DMyqwZ/t2yJYB7gPziZlZwFM5/KhHpVqsBN7J9nNgNjFhr9w9OXoDNMfgo1m2rY+7wPQYfHDOuRMLiY9FGnPW19lqG18D/NWcsIz4WS5fY3rkqoLNIi90hXL4o9cZL1XJZG0y+B5owh9NwAf53lENg49l7Cj+OSbftgKoiKWaqH77yO0l5qw/0lBRbdauK3KN5LguDfsqMdInI50kR6c0XKrESL+MbCTZwtSooohMg9JfUP+c8VnMOWTkO6jrclo2RM7h7mErU9/kiugoay5bpYEd3Il1Kgzt+TD++VJEx6g0rijVaa9KAjf6gMK2L0wJHUZadxd2WK8vxgseq1IGfWFK6DgtrWPS/p864JV+cDLEgG/MBDq6dP5SMbBFH7x1MkIaAqkHBtW2KZoLapwo04BPTIiODrXP28aAGqsjGPCFCdGx1in1+a7GnAgGfGFCdMxV+xtaiZmCmTstgWTUzk+qOzIwCcZIv5u1OiIY8IUJ0dHpZq3NagymfR6pc2b2rjIM1OzMnuZaK+/WWgF7Ulb95oFdpTraGv+qdi6M1gDBOsBuY/pmuIgOux65ot3IUHoKordHd/y6y9KRJQIZLSmHdSe6tY73TZ18G+09n0po76AqtCgQ++4k1bQpEPveMdXcViD2tXdq2aYgRoB5vp03KFF8LpJxjBJIroxBux34oT5HSIBsiQDCNvzs+xD7z4mdwB3ndxeBaUkEMuRsqhUjmNjCjhHgcFJBuIG0RgzE/mvCvqG6ARyK8/V0JbNxOY9WzdEgkUMTDPasW3pPMRn5B6aonSzrQzYCAAAAAElFTkSuQmCC">
+                    <p class="font-opcoes-busca">Assistência</p>
+                </div>
+                <div id="caminho-chamados2">  
+                    <img id="chamado-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYklEQVR4nO2aTU9TQRSGHyLSGoxIoeJSlgaj/gUXKigquEORlQY3IkG3KmtkRUKCf8GligSNGhI14gfKRkVkpbIw4s4CQVNz4ttkEtvSj+ntLeFNJrlw5p45587MmTPvKWxi4yIGdAA3gXHgI/ATWFWz5w+SWZ9TQD0hQRQ4BzwA/gDJPNtvYBLoBiLlcGAbcAVYdIxaAR4D1zQze/XFt6rV638muw480Tup978BA/o4geA4sOAY8Ao4D9QVoGsncAF47ej7DLRRQtiXGnMGfAMc8ai/FXjr6B8txezsluE2wC/gErDF9yD803kZSDiz3eRLebOmO6mos4/SYz8wpzHnZUNRiDsKXwKNBId64KnGXtCqKAhRZzk9B2oJHrXAC2eZFbRnxpzlZIddudDgrAoLAHmH2NTGDmJP5LJnErLJolvOh13qnLDoFBb0O5s/pyV21Tknig2xPcBttRNF6qoG3sk2cyorIkoVrPNhiod7gA560HdMuhbXm5VuJ0IQQkeqnEh6JlvHh+pkuVMYHTH0St8EGRBTWr1SYAIYlCP1ut+sZbKzUwM+wh9K4YhhSjrTBpBhCe0+EXZHBqVzKJ1wXMKTFeBIp3TeSSf8JKHd4sLuSIt0Gi/wH5YkjFWAI43S+T2dcFXCmgpwJOLwBBvXkaUKWlrxbEtrw2z2exIaA+gzTN5SOxRU+B2W0MizsGMw24HYIaGxhWHHlGxtz5SMpZJGYwDDipiTNO7I1GlSnhqN6QPuDdGefeCibLyfrdNZdTIu1nfUsmcfF6sZ6eta76D5qo5HQ+hIu3R9yaUMMaDOM57Jhx4P5MOsbOvL5YWow/UaoRwWDMimuXyKQm16KSFyrNw4CCzLprxLGaPOFzDaslyIi5QzW0YKURAVLZQUkVwOEns7MC0bpoupM8aVmKXKCvZ3kAffM6ccV3TBp9mZWltmBwhmT8xrTMvK9/hS3OQss4S4VwuHvlGt6LTsLKddvgeJOgEgKULZV/W1SqWMWUf/SKlr763OtKdY+94Cf8UQU+6USjuSWko+q8Xrzk6/k84klZFaen1DF58Whe0atQYVjU6rz5TDE6TSjr5y/QIiIlZ8QleAZJ5tTcRgV7kcSIc6cbF2a7ur2uMP50c19vxe19Mh9c14n9gEFY6/S5pIcXWvli0AAAAASUVORK5CYII=">
+                    <p class="font-opcoes-busca">Chamdos</p>
+                </div>
+            </div>
+            <div id="line-chamados"></div>
+            <div id="opcoes-container-baixo">
+                <div class="atributos-container" id="Adicionar">
+                    <p class="font-opcoes-busca">+ Adicionar</p>
+                </div>
+                
+                <div class="atributos-container" id="Pesquisar">
+                    <img id="lupa" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADZklEQVR4nO1ZS08TURS+LNStG8X4WKg/wQW+/4KJglEh0HOnae8ZbYi050wxAdyBf8DElbIwIcSFinGt4MbXP3DjVlxhAOUh5szcaYsGQ+mdKTT9kptM0vY798w9r/tVqTba2H0Y8EtHtCGtDU1qw5+1oe+AvGLXPCB9ks8AGTxvuFPtNmg/uKyRZ8DQqkbe2M6S74KhlxlDl5q9f9WfK53WSK9rNrgGht5q5CHwi119png4l8vtkyXPWcNnwVBRI8/Kd2ucegVYPtUUJ3SeesHQj3AjSIsaaRwKw4e2+3txDJAntOGliIMXwKebKk0A0mjlFAxP9efvHtspV7bAxwF5uno6PKLSACDdt0Z/y7NSqsMFr0YaBEPrqTij89RrY3odfO52ze8h9cTOaMM3VFKJHeeERgoSO3ETlOOcyd4pnnRuoFKdDE+pZNFRkzMzSfQJcWIpg0MnVMKQ4hFVQt4AP7jojFjejA2pcZUSwtKMYYi9cDZ22I69Vk+faBTSZ7TYRF6R54YJAdmzYfVGpQxtaE5se4YHXJBN2sQbcrK7emwjl2xfedw4mUyxYdIVu1TKyCCfj6KBPjRMJqN46EiK+RHD84Y7rSPfGibTSL+ErKdnbL9KGYVC4YANrZ+t4QjyQmuEFvIXZ8kulyKVMrx86YLNkbmWKL8a+VHjZCImRGSzKmUA8ruwISJfdRKn8YjiZFSod0QxtDowOHjQCamoHbZ6TKiUoA09sDan3ZHmSufs9Luc9hifxfIZp+TxKG/fkJN7+n8uVs9stXrunF2undKYok4blFVC0Ibu2Rc2r2/T0USMiO4Uiw8iFDjnz/P1WHzI+MEV1/ybjRkeqSgp0cm4CLMOOYmqHETrotiopBE7E+eMiGw75ZLiUcmJzWvNM8EtlTREd4pzRkQJKc319JmwT4QllpbjwbBWD65oyX4KMqoUgKowERm2AnVJLkXSTGVqliXP4UXJENkrbHXThqckseUEmuaMQCQbUTvq+VtBrgeA9PTvYXQrZ3RSyuNW4SJCASA9AeSPYQmNNrwISF8B6b1GehiG5X+uBbY6NtcZxzrw6j9hhkGfahVndBql2TW8VnIGfO5ueWe8NJpmIs4gr7Sd2QsFAJBG1V6ENqVrlTAzPKb2MiAsACn9nd1GGyrEHzyhAHC+UMw2AAAAAElFTkSuQmCC">
+                    <p class="font-opcoes-busca">Pesquisar</p>
+                </div>
+                
+                <div class="atributos-container" id="Listas">
+                    <img id="estrela" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXElEQVR4nO1aaWhcVRS+sa51qbu4IoILWvxRqrjg8kNQ80NxGUFsM+/eF947Z+I0TWbOmUQqz3+KG7hRqkLVCoUqQg22aN0SUNQfdQHbqBSLpFYrttpCk2oa5dx3XzJMks7UvpnOgB88GN679zvnbme7o9T/qI4oio4wwB9roEH5rVoVGou3GOR/5JHfqlWhkVZPDYRWq1aE7/ecapBGDfK4PBp4bHFX32mq1aCBl8SrQes08Hq7KsBLVKvBAH9pBwLFe3SO741/0zeqlWACWhifC/4tn88fk8lERxvkX+1gAlqoWgUaeLk75E9OvaOn3PZarloBmZ6e4wzwLqt0WLg8eZ8N+i8zyBMa6Y8giOaqZofGYoc7D59M/8afOp/SoZodGmjQDcRM+4bsx9uLBlUzo7Or7xK7fYD2GEMnVn7P5aITNPJuGYxsNdWs0MiPuUP+0mxtDNDLzr88qpoRURQdqYG3iZKdwNfM1s4ExWtdyPJLEARHqWaDlyvd6WZ6c7W2Bvlbd47uUM0GDfS221a9NbQtOIe5VjUSQRDN1fn+MzT2XeR10QKTK93ohdTuI2U0UmCASAP9bZD2SbtqfNLGtpU+0hcpEC4vpHbL3UULRJa0q9nnGKDFGukVjfymQd6gkT6XpdfAWzXSTg20PwnFqz0aeU2tk2OA3qiZF2h/rAtvtbrFOm4QnUV3GYMQ7qhORqMSNxmkLRppo0EeslEt8hoN9KIBftoAR0Hw0Nk1D6SLzpE+0lc4hMsgrRPuWIbIsjJHq+oHtEP5ueJtEja4Gd2tQ77PQGF+NixdiNh3SiaTmaMOMzKZzBzRRXQS3UTHxB+J7jIG29AL6WINtCmJWP2wdLNqUnjI1xng7W7L/VAez1k8kM+flFgeOYR+yA+qJoMH1ClGwkXR78oqzbqEZd5ZnhXN4LQicbYVesm7qh11ju43wHtdp6FFUDhTHcbcXwO/71ZhTCPrgyKw/gL4J2e1tsghUw2GAbpUIw+7Q/3zgUKfWkzkZ+7c7NFh8S7VIHghtU9ZU9oYBKULDolQcm4NvNJtswnZq3WuGrYZpFLiiKUelmpGKWFEHIbEHnxRoXC8ShnZbHSsAVrlJm1cBqTqAQ18e5KPS7nHw97z0+IWLjNZQuJdIks17AACr0yL18ZMaFd7WGSkxVtN6HNu5qK0OG3chXZynk2Ls7pQpM0i1A+L16fFKVwmto6bVCNgTbILMNP0+uKpDfCfNlXO83mq3vCBs86qDKTNbZAHGlb30sivub28NHVu4KUuv3hV1RsGeSQWln7IYqAw303SNnGMql6Q2N9Zq+21CLKmGni9PDUW5NokpqqsG9fv8gZoVdWDi1QqT1M18l8S3sgVwwFlIL8e9ynmUx9AmZC1TqlZQ2k/5Ks18NdJbGYri3F1cSK57JE2s/U3uaJX11JRnNzE0ehMoYlcJ7jkZzwJ/ctvcj2gGxL/4wLCFVILruTpCHvOrYd5n6HUycOV3zTSTQb5+yRNNkjPzBRUxoOlR5J01SD96AHfOo0P6Ltqpdf/DA38sBP+fPIu2919sszs5LZB+srDvquqcflYvNIAfVFeDwuC3tPLZL3gtuGy1Aci/2CIrUmcXEllcPJeEHivzPTBbAVnELrtFUQ8mN8lVYi5+W6Xi3yUfskUeEz2f2eOrzDIb5UVAoYOJVq1pVGk98r43rErFucj+1LNe6QANjXzk4Wxne5WKg3H1SZcWjjdQU+KH5PFtzSggZ6oKFMOiHVRKcP3+89KQqCy8/N4agI08IeOeETuQVRj7lpGnAH5IDVia16BlgVBaZ5qEIKgNE9kiuxGyWwK/AtsCfDvqpk9sgAAAABJRU5ErkJggg==">
+                    <p class="font-opcoes-busca">Listas</p>
+                </div>
+                
+                <div class="atributos-container" id="Modelos">
+                    <img id="jornal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+UlEQVR4nO1ZzUrDQBAOiL149AU8ePMZBMFnyE3RnUo6Uw+C7UzrD3jrEwg+iI9QxYt696CgF+8iivhLYlpSanSTbraN7AfLQggz883szCSznufg4OAwcQiCYFqR7AHKBRC/AMlnsYtfIl3Iu6HukYz3/YOKIj4r3uiUhXw6EglA3h+b8dQnsZubgCK+TAjbHjmkGgiCYBpImj29ivg8t7DkmQ+Pk2cJvn9QSeZEbkHJUBq1cATdvu9PbdRlIdxzC7EBSNENJMfx8+PcQmwAUnQr5PcoN5DfcwuxASD5iHV/5LbpFy90FPKrqVIZylLInQHdyN24jHaNEwCUR/P1Xh6TOlYajZlqrbUU7qWMQBqMEBgnoCwEFHIHiJ+HcqMsBKD/FTDYiUtEQNIamSPg/VWFfqoq1Xp7XqHcaPcBKjACen9mQ2e3maUPQLEE9Or7BESAr2NvXusKMZX4YILAt9e4Ee6lJJAGR2CSIgATnsRbCvkq3MtZRlGeYuFP/6qR2QA4At7/iMBb72WtQZJBgKEkvuu9vI68WKTBOmPNzCNHhXLUrxTEt1DnZVuRgOg+ou/tZjidAOJWpqHvWq01p0gedBuXzbVOsqPniTovA8r9uA2GZN8gOck06l/dbM8C8WF0jBKJbXVh1PDuFbbaNu4pHBwcHLzM+ALm79EnM2C4hQAAAABJRU5ErkJggg==">
+                    <p class="font-opcoes-busca">Modelos</p>
+                </div>
+                
+                <div class="atributos-container" id="Kanban-global">
+                    <img id="janela" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWklEQVR4nO2ZTU7DQAyFveIYlLNA4QZZwxipjbNtZrLkFoVejvJzgcI6UpFLGwapaUImZQJ6nzSrSW0/21n0hQgAAAbH9bQ4Y3ELk9pXFleyuHWkU2oNRuwDZ7NRq+JZ8isj7j1i0eu9J3VvRvJxY+cHWbx8iZhMitMD3XeL3cMmdY83aXGeJHcn3n0VjHqG98TW3JzZCxa79Oq6rw2y3fnNg1p8myTHFLDjU8RWgNhnqsN/Yf3OxxaQ6CS8F7tTkDb3IXAfuSEgAMYECCsUBGOF6HsXms4xJ8Bdc0PAkCZAHe77EkBdc0NAAIwJEFYoCMYKEVYoCMYKEVYoCMYK0f9YofJvG1upexmitWgkH3ve6FNtkI0PXwWyS/1hbHP3duoufXOXxc7rg2SzkVrYP/l39JvHiF0dtNercQ1QhBG7Upe61ThVpY5Krezon5hEa7Dzxs4DAADF4AOji5kFbs9zNgAAAABJRU5ErkJggg==">
+                    <p class="font-opcoes-busca">Kanban global</p>
+                </div>
+                
+                <div class="atributos-container" id="Chamados-aguardando">
+                    <img id="olho" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE7klEQVR4nO1YS4gcVRTtxN9C4/8bNYL/hQquXPnbOrrw04qmZ6bfq1B9b7VtTLrvrRlFGowfSGLEnboXNNFByZhowih+4kIFkwgOEc1CFypR0ERINBkj99V7PTXdr3q60w7Oog4UFPV+93vufVUo5MiRI0eOHDly5Fj0WFmrnRlgfI9Gel4hv6ORphXyAQV8xDzIB+SbBnrbzAG6W2taVlgM0JqW6ahR1khTCuioRj7ez2PX7AyAR/8XpXRUv0IDb9LAf8wRDmivAtqgKo17NdRvQBw7JwzDU+SR93I1vjFAvk8BPaeBPtHIx2bXmr02lnHt5QuugKqNX6CRXtJIf821Lj2tq7S83/3CcO35Rqk5XuIjGulFGVsYJbAxopB/swf+0woloC0Dbr1EI2+1+x6Tve2+v2qg4f82jJDea1kM+VON8ZB4RSH/LeO+dSaZkaY08J8K6JB5x3jINzeIxq4WwyhjnHhIAX2U8va2MIxXDKREGekhhXzQWUiSUiyokMJEKXrNqzzQM5kJjrzOuwbpDSt4ZPcYTpjOrDmoKvxg3wo0m82TTTK3DqcdQTB+0eyh/K75HtHDfk+4WOdGGD5xiTwaiOy34z7PKIxLdt12960E9QtT0SDhvEFk60mJ0dWrz1ZIH7qYVcBPNZvNpW3C/ijjI2Hjqk5F+AO7ttEpLLO1+lT7WLlC11j2+qHNqEsV8pOzDEdTImNXJazl9lp3SgG70zfPWbZUr5/uEdaEouzVPibM5kKlfSyKmmdYQQ/7zgwq8R0u1DTS7tGocXGGEvEKBbzfunf/qurYtVkKt/LGU8ROVBFTXNE/5iAyORk10vcdNUe008jfWtd+lamtExZon8z1KZuwkyEH8ozFWaGlga6zY9PzRg3SbtsZ7Jsjq0L+zHpiz3B17LxuG1mBtmUle0LNSbKbnBAvGE+IEq6Qdia7rtBKK9xkb4WU91iD7UpbY5d169dpdsqCgrhqvfe6dxx5Xb/0q5A3J4rEON/5IqPI2qFIOrQU0De++E5jVY0vS4qXFMWxK31zbNGUZvJQLwXR7AV0dKSy5tJuZ1vvTntDyyW7JJCbkCWggwJ61Vr4zcKA0MgTtl693G2e0H0rl5G/y2wwxRMu9oTqykC3Zh5epeWOoRRQfQAlGlaJ37uRjEK63fRfPRKSKYgt5jHu5sekLfHNlYuUAppJCmf/ylglZO1MVtgVpCUCfjzVce8Mw/is3lsU5I2pC9CktPBeZSr8qFVG5r3lq/b+nLDhBDQj5OGbVzItStIOmRYFeX2xWDypMFjTyD9JK+/zjumvWpcs0xVvDiB+ZDQcv14qtjzybigWaIvpmm04ZXhiiTSoCulnVyQDpGJhEBiWMPfs1i3wcxXVb/Fxu1y6erny2jmveKs/xDcnV4XWRWt71lXhxBQCGnbJZsJBfjBE8W3t84Q+pRZISAiVO/q175My5qNY6aU08tZWmMqPC4xLhYWAsTrwptl23Bz4hQbSQbDm3H73ky5CIQcK6cvUReqwAnqhlw5jYAh/GzJI/Xywcf+xuVRB4/4AGzeJMMVi89RarXaavMs3FfEDCvlZ+fmQDkPJF4W8fr6CuCCQjtUm5Q6XwP08skYBvy8kIoRQWAxI7hPxkLE28oTkhEb+xf2gS97NtwmZU67QXYtG+Bw5cuTIkSNHjhyFbvgXfNsQp+S5I74AAAAASUVORK5CYII=">
+                    <p class="font-opcoes-busca">Chamados aguardando sua aprovação</p>
+                </div>
+            </div>
+            <input type="text" id="pesquisar" dirname="Pesquisar" placeholder="Pesquisar...">
+        </div>
+    </header>
+    <main>
+        <div id="container-vazio">
+            <div id="icons-vazio"></div>
+        </div>
+        <div id="container-regras">
+            <div id="grupo-regras">
+                <select class="escolhas" id="NOT">
+                    <option value="option1">- - -</option>
+                    <option value="option2">Status</option>
+                </select>
+                <select class="escolhas" id="selct-atribuido">
+                    <option value="option1">Atribuído - Técnico</option>
+                    <option value="option2">Status</option>
+                </select>
+                <select class="escolhas" id="selct-e">
+                    <option value="option1">É</option>
+                    <option value="option2">Não é</option>
+                    <option value="option2">Contem</option>
+                    <option value="option2">Não contem</option>
+                </select>
+                <select class="escolhas" id="selct-eu">
+                    <option value="option1">Eu</option>
+                    <option value="option2">glpi</option>
+                    <option value="option3">Outros usuarios</option>
+                </select>
+            </div>
+            
+            <div id="container-adciona-regra">
+                <div id="regras">
+                    <div id="regra" class="regras-adiciona-chamado"></div>
+                    <div id="regra-global" class="regras-adiciona-chamado"></div>
+                    <div id="grupo" class="regras-adiciona-chamado"></div>
+                    <div id="pesquisinha" class="regras-adiciona-chamado"></div>
+
+                    <div id="icone-regras">
+                        <img id="estrelinha" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXElEQVR4nO1aaWhcVRS+sa51qbu4IoILWvxRqrjg8kNQ80NxGUFsM+/eF947Z+I0TWbOmUQqz3+KG7hRqkLVCoUqQg22aN0SUNQfdQHbqBSLpFYrttpCk2oa5dx3XzJMks7UvpnOgB88GN679zvnbme7o9T/qI4oio4wwB9roEH5rVoVGou3GOR/5JHfqlWhkVZPDYRWq1aE7/ecapBGDfK4PBp4bHFX32mq1aCBl8SrQes08Hq7KsBLVKvBAH9pBwLFe3SO741/0zeqlWACWhifC/4tn88fk8lERxvkX+1gAlqoWgUaeLk75E9OvaOn3PZarloBmZ6e4wzwLqt0WLg8eZ8N+i8zyBMa6Y8giOaqZofGYoc7D59M/8afOp/SoZodGmjQDcRM+4bsx9uLBlUzo7Or7xK7fYD2GEMnVn7P5aITNPJuGYxsNdWs0MiPuUP+0mxtDNDLzr88qpoRURQdqYG3iZKdwNfM1s4ExWtdyPJLEARHqWaDlyvd6WZ6c7W2Bvlbd47uUM0GDfS221a9NbQtOIe5VjUSQRDN1fn+MzT2XeR10QKTK93ohdTuI2U0UmCASAP9bZD2SbtqfNLGtpU+0hcpEC4vpHbL3UULRJa0q9nnGKDFGukVjfymQd6gkT6XpdfAWzXSTg20PwnFqz0aeU2tk2OA3qiZF2h/rAtvtbrFOm4QnUV3GYMQ7qhORqMSNxmkLRppo0EeslEt8hoN9KIBftoAR0Hw0Nk1D6SLzpE+0lc4hMsgrRPuWIbIsjJHq+oHtEP5ueJtEja4Gd2tQ77PQGF+NixdiNh3SiaTmaMOMzKZzBzRRXQS3UTHxB+J7jIG29AL6WINtCmJWP2wdLNqUnjI1xng7W7L/VAez1k8kM+flFgeOYR+yA+qJoMH1ClGwkXR78oqzbqEZd5ZnhXN4LQicbYVesm7qh11ju43wHtdp6FFUDhTHcbcXwO/71ZhTCPrgyKw/gL4J2e1tsghUw2GAbpUIw+7Q/3zgUKfWkzkZ+7c7NFh8S7VIHghtU9ZU9oYBKULDolQcm4NvNJtswnZq3WuGrYZpFLiiKUelmpGKWFEHIbEHnxRoXC8ShnZbHSsAVrlJm1cBqTqAQ18e5KPS7nHw97z0+IWLjNZQuJdIks17AACr0yL18ZMaFd7WGSkxVtN6HNu5qK0OG3chXZynk2Ls7pQpM0i1A+L16fFKVwmto6bVCNgTbILMNP0+uKpDfCfNlXO83mq3vCBs86qDKTNbZAHGlb30sivub28NHVu4KUuv3hV1RsGeSQWln7IYqAw303SNnGMql6Q2N9Zq+21CLKmGni9PDUW5NokpqqsG9fv8gZoVdWDi1QqT1M18l8S3sgVwwFlIL8e9ynmUx9AmZC1TqlZQ2k/5Ks18NdJbGYri3F1cSK57JE2s/U3uaJX11JRnNzE0ehMoYlcJ7jkZzwJ/ctvcj2gGxL/4wLCFVILruTpCHvOrYd5n6HUycOV3zTSTQb5+yRNNkjPzBRUxoOlR5J01SD96AHfOo0P6Ltqpdf/DA38sBP+fPIu2919sszs5LZB+srDvquqcflYvNIAfVFeDwuC3tPLZL3gtuGy1Aci/2CIrUmcXEllcPJeEHivzPTBbAVnELrtFUQ8mN8lVYi5+W6Xi3yUfskUeEz2f2eOrzDIb5UVAoYOJVq1pVGk98r43rErFucj+1LNe6QANjXzk4Wxne5WKg3H1SZcWjjdQU+KH5PFtzSggZ6oKFMOiHVRKcP3+89KQqCy8/N4agI08IeOeETuQVRj7lpGnAH5IDVia16BlgVBaZ5qEIKgNE9kiuxGyWwK/AtsCfDvqpk9sgAAAABJRU5ErkJggg==">
+                        <div id="redondinha">
+                            <p>X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
